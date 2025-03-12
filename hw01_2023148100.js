@@ -72,9 +72,9 @@ const positions = [
 
 // Define the colors for the four quadrants
 const colors = [
-    [1.0, 0.0, 0.0, 1.0], // Red
-    [1.0, 1.0, 0.0, 1.0], // Yellow
     [0.0, 0.0, 1.0, 1.0], // Blue
+    [1.0, 1.0, 0.0, 1.0], // Yellow
+    [1.0, 0.0, 0.0, 1.0], // Red
     [0.0, 1.0, 0.0, 1.0], // Green
 ];
 
