@@ -73,9 +73,9 @@ const positions = [
 // Define the colors for the four quadrants
 const colors = [
     [1.0, 0.0, 0.0, 1.0], // Red
-    [0.0, 1.0, 0.0, 1.0], // Green
-    [0.0, 0.0, 1.0, 1.0], // Blue
     [1.0, 1.0, 0.0, 1.0], // Yellow
+    [0.0, 0.0, 1.0, 1.0], // Blue
+    [0.0, 1.0, 0.0, 1.0], // Green
 ];
 
 // Create a buffer for the positions
@@ -115,8 +115,9 @@ function render() {
 
 // Resize viewport when window size changes
 window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    const size = Math.min(window.innerWidth, window.innerHeight);
+    canvas.width = size;
+    canvas.height = size;
     gl.viewport(0, 0, canvas.width, canvas.height);
     render();
 });
